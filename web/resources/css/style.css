@@ -1,0 +1,144 @@
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #006783;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0197C0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+li a:hover {
+    background-color: #0471A3;
+}
+
+.active {
+    background-color: #0471A3;
+    color: white;
+}
+
+.container{
+    padding: 30px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #006783;
+    color: white;
+    text-align: center;
+}
+
+.social{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006783;
+}
+
+h1, h2, h3, h4, h5{
+    color:#0471A3;
+}
+
+.formulario{
+    padding: 2% 25% 5% 25%;
+    text-align: center;
+}
+
+.form{
+    padding: 15px;
+    height: 25%;
+    border-radius: 25px;
+    border: 2px solid;
+    border-color: #006783;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+.btn{
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+
+.primary{
+    background-color: #0197C0;
+}
+
+.danger{
+    background-color: #c00e01;
+}
+
+.success{
+    background-color: #06c730;
+}
+
+/*Alertas*/
+
+.info, .correcto, .ojo, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:left;
+    width:auto;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('imagenes/info.jpg');
+}
+.correcto {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('imagenes/correcto.JPG');
+}
+.ojo {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('imagenes/ojo.JPG');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('imagenes/error.jpg');
+}
