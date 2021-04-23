@@ -98,7 +98,6 @@ public class Consulta extends HttpServlet {
         //Enviar datos a la pagina de respuesta
         request.setAttribute("e", e);
         //Redireccionar a la pagina de respuesta
-        //<%-- ESTO HAY QUE APRENDERLO --%>
         RequestDispatcher dispatcher
                 = request.getRequestDispatcher(paginaRespuesta);
         dispatcher.forward(request, response);

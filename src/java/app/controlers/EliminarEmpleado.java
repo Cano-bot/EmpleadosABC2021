@@ -5,11 +5,9 @@
  */
 package app.controlers;
 
-import app.model.Empleado;
 import app.persistencia.ConexionJDB;
 import app.persistencia.EmpleadoDaoJDB;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import javax.servlet.RequestDispatcher;

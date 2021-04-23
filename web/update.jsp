@@ -13,20 +13,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="resources/images/favicon.png"/>
-        <title>Empleados ABC 2021</title>
+        <title>Empleados ABC 2021 - Actualizar Empleado</title>
     </head>
 
     <body onLoad="alerta('${mensaje}');">
         <div class="header">
-            <img src="resources/images/logo.png" alt="Logo Empleados ABC 2021">
+            <img class="img" src="resources/images/logo.png" alt="Logo Empleados ABC 2021">
+            <div>
+                <ul class="navbar">
+                    <li><a href="index.jsp"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="add.jsp"><i class="fa fa-user-plus"></i> Agregar Empleado</a></li>
+                    <li><a href="remove.jsp"><i class="fa fa-trash"></i> Borrar Empleado</a></li>
+                    <li><a href="consult.jsp"><i class="fa fa-search"></i> Consultar Empleado</a></li>
+                    <li><a href="update.jsp" class="active"><i class="fa fa-users"></i> Actualizar Empleado</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="navbar">
-            <li><a href="index.jsp"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="add.jsp"><i class="fa fa-user-plus"></i> Agregar Empleado</a></li>
-            <li><a href="remove.jsp"><i class="fa fa-trash"></i> Borrar Empleado</a></li>
-            <li><a href="consult.jsp"><i class="fa fa-search"></i> Consultar Empleado</a></li>
-            <li><a href="update.jsp" class="active"><i class="fa fa-users"></i> Actualizar Empleado</a></li>
-        </ul>
 
         <div class="container">
             <h1>Actualizar Empleado</h1>
@@ -34,19 +36,19 @@
                 <form action="ActualizarEmpleado" class="form" method="POST">
                     <label for="id">
                         <b>ID</b>
-                        <input type="text" placeholder="ID" name="id">
+                        <input type="text" placeholder="ID" name="id" required>
                     </label>
                     <label for="fName">
                         <b>Nombre</b>
-                        <input type="text" placeholder="Nombre" name="fName">
+                        <input type="text" placeholder="Nombre" name="fName" required>
                     </label>
                     <label for="lName">
                         <b>Apellido</b>
-                        <input type="text" placeholder="Apellido" name="lName">
+                        <input type="text" placeholder="Apellido" name="lName" required>
                     </label>
                     <label for="puesto">
                         <b>Puesto</b>
-                        <input type="text" placeholder="Puesto" name="puesto">
+                        <input type="text" placeholder="Puesto" name="puesto" required>
                     </label>
                     <label for="sueldo">
                         <b>Sueldo</b>

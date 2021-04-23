@@ -16,20 +16,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="resources/images/favicon.png"/>
-        <title>Empleados ABC 2021</title>
+        <title>Empleados ABC 2021 - Consultar Empleado</title>
     </head>
 
     <body onLoad="alerta('${mensaje}');">
         <div class="header">
-            <img src="resources/images/logo.png" alt="Logo Empleados ABC 2021">
+            <img class="img" src="resources/images/logo.png" alt="Logo Empleados ABC 2021">
+            <div>
+                <ul class="navbar">
+                    <li><a href="index.jsp"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="add.jsp"><i class="fa fa-user-plus"></i> Agregar Empleado</a></li>
+                    <li><a href="remove.jsp"><i class="fa fa-trash"></i> Borrar Empleado</a></li>
+                    <li><a href="consult.jsp" class="active"><i class="fa fa-search"></i> Consultar Empleado</a></li>
+                    <li><a href="update.jsp"><i class="fa fa-users"></i> Actualizar Empleado</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="navbar">
-            <li><a href="index.jsp"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="add.jsp"><i class="fa fa-user-plus"></i> Agregar Empleado</a></li>
-            <li><a href="remove.jsp"><i class="fa fa-trash"></i> Borrar Empleado</a></li>
-            <li><a href="consult.jsp" class="active"><i class="fa fa-search"></i> Consultar Empleado</a></li>
-            <li><a href="update.jsp"><i class="fa fa-users"></i> Actualizar Empleado</a></li>
-        </ul>
 
         <div class="container">
             <h1>Buscar Empleado</h1>
@@ -37,24 +39,23 @@
                 <form action="Consulta" class="form" method="POST">
                     <label for="id">
                         <b>ID</b>
-                        <input type="text" placeholder="ID" name="id" id="" value="${e.id}">
+                        <input type="text" placeholder="ID" name="id" value="${e.id}" required>
                     </label>
                     <label for="fName">
                         <b>Nombre</b>
-                        <input type="text" placeholder="Nombre" name="fName" id="" value="${e.nombre}" disabled>
+                        <input type="text" placeholder="Nombre" name="fName" value="${e.nombre}" disabled>
                     </label>
-                    <b>Apellido</b>
                     <label for="lName">
                         <b>Apellido</b>
-                        <input type="text" placeholder="Apellido" name="lName" id="" value="${e.apellidos}" disabled>
+                        <input type="text" placeholder="Apellido" name="lName" value="${e.apellidos}" disabled>
                     </label>
                     <label for="puesto">
                         <b>Puesto</b>
-                        <input type="text" placeholder="Puesto" name="puesto" id="" value="${e.puesto}" disabled>
+                        <input type="text" placeholder="Puesto" name="puesto" value="${e.puesto}" disabled>
                     </label>
                     <label for="sueldo">
                         <b>Sueldo</b>
-                        <input type="text" placeholder="Sueldo" name="sueldo" id="" value="${e.sueldoBase}" disabled>
+                        <input type="text" placeholder="Sueldo" name="sueldo" value="${e.sueldoBase}" disabled>
                     </label>
                     <button type="submit" class="btn primary">Buscar</button>
                 </form>
