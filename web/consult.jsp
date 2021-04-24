@@ -39,7 +39,7 @@
                 <form action="Consulta" class="form" method="POST">
                     <label for="id">
                         <b>ID</b>
-                        <input type="text" placeholder="ID" name="id" value="${e.id}" required>
+                        <input type="number" placeholder="ID" name="id" value="${e.id}" required>
                     </label>
                     <label for="fName">
                         <b>Nombre</b>
@@ -55,7 +55,7 @@
                     </label>
                     <label for="sueldo">
                         <b>Sueldo</b>
-                        <input type="text" placeholder="Sueldo" name="sueldo" value="${e.sueldoBase}" disabled>
+                        <input type="number" placeholder="Sueldo" name="sueldo" value="${e.sueldoBase}" disabled>
                     </label>
                     <button type="submit" class="btn primary">Buscar</button>
                 </form>

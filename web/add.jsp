@@ -40,7 +40,7 @@
                 <form action="AltaEmpleado" class="form" method="POST">
                     <label for="id">
                         <b>ID</b>
-                        <input type="text" placeholder="ID" name="id" required>
+                        <input type="number" placeholder="ID" name="id" required>
                     </label>
                     <label for="fName">
                         <b>Nombre</b>
@@ -56,7 +56,7 @@
                     </label>
                     <label for="sueldo">
                         <b>Sueldo</b>
-                        <input type="text" placeholder="Sueldo" name="sueldo" required>
+                        <input type="number" placeholder="Sueldo" name="sueldo" required>
                     </label>
                     <button type="submit" class="btn success">Agregar</button>
                 </form>

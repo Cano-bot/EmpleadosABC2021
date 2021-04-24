@@ -40,7 +40,7 @@
                 <form action="EliminarEmpleado" class="form" method="POST">
                     <label for="id">
                         <b>ID</b>
-                        <input type="text" placeholder="ID" name="id" required>
+                        <input type="number" placeholder="ID" name="id" required>
                     </label>
                     
                     <button type="submit" class="btn danger">Eliminar</button>
